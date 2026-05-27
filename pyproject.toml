@@ -1,0 +1,9 @@
+[project]
+name = "stock-analyzer"
+version = "0.1.0"
+description = "Personal portfolio analysis tool"
+requires-python = ">=3.11"
+dependencies = [
+    "yfinance>=0.2.40",
+    "pandas>=2.2",
+]

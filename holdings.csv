@@ -1,0 +1,8 @@
+lot_id,symbol,account,account_type,qty,cost_basis_per_share,acquired,asset_class,region,notes
+voo-2020-01-a,VOO,fidelity_taxable,taxable,80,295.10,2020-01-15,equity_us_lc,US,core S&P holding
+voo-2022-06-a,VOO,fidelity_taxable,taxable,40,360.20,2022-06-10,equity_us_lc,US,DCA add
+baba-2021-03-a,BABA,fidelity_taxable,taxable,150,231.40,2021-03-15,equity_intl_em,CN,thesis: cloud + intl growth; revisit annually
+baba-2022-10-a,BABA,fidelity_taxable,taxable,60,78.50,2022-10-05,equity_intl_em,CN,averaged down post-crackdown
+flch-2023-02-a,FLCH,fidelity_taxable,taxable,200,28.40,2023-02-20,equity_intl_em,CN,China ex-SOE exposure
+vxus-2021-08-a,VXUS,fidelity_taxable,taxable,120,62.10,2021-08-12,equity_intl_dm,DM,ex-US developed
+bnd-2023-05-a,BND,fidelity_taxable,taxable,150,71.80,2023-05-01,bond_us,US,bond ballast

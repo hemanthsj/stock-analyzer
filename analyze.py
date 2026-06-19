@@ -40,9 +40,10 @@ def fetch_prices(symbols: list[str]) -> dict[str, float]:
     out = dict(cached)
     for s in symbols:
         hist = tickers.tickers[s].history(period="5d")
-        if hist.empty:
+        close = hist["Close"].dropna() if not hist.empty else hist.get("Close", pd.Series(dtype=float))
+        if close.empty:
             raise RuntimeError(f"no price data for {s}")
-        out[s] = float(hist["Close"].iloc[-1])
+        out[s] = float(close.iloc[-1])
     cache_file.write_text(json.dumps(out, indent=2))
     return {s: out[s] for s in symbols}
 
